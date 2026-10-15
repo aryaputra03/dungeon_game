@@ -11,8 +11,20 @@ config_version=5
 [application]
 
 config/name="dungeon_game"
+run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+EventBus="*uid://o57518t7ksl2"
+GameState="*uid://detg262d60byx"
+SaveManager="*uid://wj7ok5tkjth6"
+AudioManager="*uid://521x2ga2jjks"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
 
 [display]
 
